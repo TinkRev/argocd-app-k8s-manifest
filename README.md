@@ -1,0 +1,1 @@
+# argocd-app-k8s-manifest
