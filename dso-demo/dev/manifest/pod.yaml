@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
     - name: app
-      image: docker.io/rhythmsyu/dso-demo:latest
+      image: docker.io/rhythmsyu/dso-demo:84
       imagePullPolicy: Always
       resources:
         requests:
