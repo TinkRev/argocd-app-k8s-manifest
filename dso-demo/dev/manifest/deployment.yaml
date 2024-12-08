@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: docker.io/rhythmsyu/dso-demo:175
+        image: docker.io/rhythmsyu/dso-demo:176
         imagePullPolicy: Always
         resources:
           requests:
