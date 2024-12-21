@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: dso-demo-dev
+spec:
+  destination:
+    name: ''
+    namespace: dev
+    server: https://kubernetes.default.svc
+  source:
+    path: dso-demo/dev/manifest
+    repoURL: https://github.com/TinkRev/argocd-app-k8s-manifest.git
+    targetRevision: HEAD
+  sources: []
+  project: devsecops
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: false
+    syncOptions:
+      - CreateNamespace=true
